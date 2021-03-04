@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+body {
+    background: linear-gradient(270deg, #ff5c33, #ffff99);
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+    font-family: 'Cormorant Garamond', 'Garamond', 'SansSerif';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container {
+    margin: 200px auto 0 auto;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quote {
+    background-color: #f2f2f2;
+    padding: 50px 20px 20px 20px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #4e4e4e;
+    font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#info {
+    height: 20px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #f2e6d9;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+#tweet, #generate{
+    cursor: pointer;
+    display: inline-block;
+    height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    color: #4f4f4f
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tweet {
+    float: right;
+}
+
+#generate {
+    cursor: pointer;
+}
+
+#tweet:hover, #generate:hover {
+    text-shadow: 2px 2px 4px #4e4e2e;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
